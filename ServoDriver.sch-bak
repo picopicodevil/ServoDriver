@@ -182,54 +182,54 @@ Wire Wire Line
 $Comp
 L SamacSys_Parts:LTC485CN8#PBF IC1
 U 1 1 5E4BBCB0
-P 2250 2600
-F 0 "IC1" H 2750 2865 50  0000 C CNN
-F 1 "LTC485" H 2750 2774 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 3100 2700 50  0001 L CNN
-F 3 "http://docs-emea.rs-online.com/webdocs/1385/0900766b81385290.pdf" H 3100 2600 50  0001 L CNN
-F 4 "LTC485CN8#PBF, Line Transceiver, RS-485 Differential, 5 V, 8-Pin PDIP" H 3100 2500 50  0001 L CNN "Description"
-F 5 "3.935" H 3100 2400 50  0001 L CNN "Height"
-F 6 "Linear Technology" H 3100 2300 50  0001 L CNN "Manufacturer_Name"
-F 7 "LTC485CN8#PBF" H 3100 2200 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "584-LTC485CN8#PBF" H 3100 2100 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=584-LTC485CN8%23PBF" H 3100 2000 50  0001 L CNN "Mouser Price/Stock"
-F 10 "5455786P" H 3100 1900 50  0001 L CNN "RS Part Number"
-F 11 "http://uk.rs-online.com/web/p/products/5455786P" H 3100 1800 50  0001 L CNN "RS Price/Stock"
-	1    2250 2600
+P 4150 3550
+F 0 "IC1" H 4650 3815 50  0000 C CNN
+F 1 "LTC485" H 4650 3724 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5000 3650 50  0001 L CNN
+F 3 "http://docs-emea.rs-online.com/webdocs/1385/0900766b81385290.pdf" H 5000 3550 50  0001 L CNN
+F 4 "LTC485CN8#PBF, Line Transceiver, RS-485 Differential, 5 V, 8-Pin PDIP" H 5000 3450 50  0001 L CNN "Description"
+F 5 "3.935" H 5000 3350 50  0001 L CNN "Height"
+F 6 "Linear Technology" H 5000 3250 50  0001 L CNN "Manufacturer_Name"
+F 7 "LTC485CN8#PBF" H 5000 3150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "584-LTC485CN8#PBF" H 5000 3050 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=584-LTC485CN8%23PBF" H 5000 2950 50  0001 L CNN "Mouser Price/Stock"
+F 10 "5455786P" H 5000 2850 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/5455786P" H 5000 2750 50  0001 L CNN "RS Price/Stock"
+	1    4150 3550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR012
 U 1 1 5E4BE24A
-P 3250 2600
-F 0 "#PWR012" H 3250 2450 50  0001 C CNN
-F 1 "+5V" H 3265 2773 50  0000 C CNN
-F 2 "" H 3250 2600 50  0001 C CNN
-F 3 "" H 3250 2600 50  0001 C CNN
-	1    3250 2600
+P 5150 3550
+F 0 "#PWR012" H 5150 3400 50  0001 C CNN
+F 1 "+5V" H 5165 3723 50  0000 C CNN
+F 2 "" H 5150 3550 50  0001 C CNN
+F 3 "" H 5150 3550 50  0001 C CNN
+	1    5150 3550
 	1    0    0    -1  
 $EndComp
-Text GLabel 3250 2700 2    50   BiDi ~ 0
+Text GLabel 5150 3650 2    50   BiDi ~ 0
 D-
-Text GLabel 3250 2800 2    50   BiDi ~ 0
+Text GLabel 5150 3750 2    50   BiDi ~ 0
 D+
 Wire Wire Line
-	2250 2700 2250 2800
-Text GLabel 2250 2900 0    50   Input ~ 0
+	4150 3650 4150 3750
+Text GLabel 4150 3850 0    50   Input ~ 0
 TRX_TX
-Text GLabel 2250 2600 0    50   Output ~ 0
+Text GLabel 4150 3550 0    50   Output ~ 0
 TRX_RX
-Text GLabel 2250 2750 0    50   Input ~ 0
-TRX_Signal
+Text GLabel 4150 3700 0    50   Input ~ 0
+TRX_Enable
 $Comp
 L power:GNDPWR #PWR013
 U 1 1 5E4CC7A1
-P 3250 2900
-F 0 "#PWR013" H 3250 2700 50  0001 C CNN
-F 1 "GNDPWR" H 3254 2746 50  0000 C CNN
-F 2 "" H 3250 2850 50  0001 C CNN
-F 3 "" H 3250 2850 50  0001 C CNN
-	1    3250 2900
+P 5150 3850
+F 0 "#PWR013" H 5150 3650 50  0001 C CNN
+F 1 "GNDPWR" H 5154 3696 50  0000 C CNN
+F 2 "" H 5150 3800 50  0001 C CNN
+F 3 "" H 5150 3800 50  0001 C CNN
+	1    5150 3850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -244,7 +244,7 @@ F 3 "~" H 4500 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4300 2100 0    50   Output ~ 0
-MCU_Signal
+MCU_Enable
 $Comp
 L power:+3.3V #PWR08
 U 1 1 5E4CD9A4
@@ -419,128 +419,6 @@ F 3 "~" H 1800 2000 50  0001 C CNN
 	1    1800 2000
 	-1   0    0    1   
 $EndComp
-$Comp
-L Isolator:TLP785 U4
-U 1 1 5E4F8EEB
-P 4500 4050
-F 0 "U4" H 4500 4375 50  0000 C CNN
-F 1 "TLP785" H 4500 4284 50  0000 C CNN
-F 2 "Package_DIP:DIP-4_W7.62mm" H 4300 3850 50  0001 L CIN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=10569&prodName=TLP785" H 4500 4050 50  0001 L CNN
-	1    4500 4050
-	1    0    0    -1  
-$EndComp
-Text GLabel 3900 3300 0    50   Input ~ 0
-MCU_Signal
-Text GLabel 4800 4150 2    50   Output ~ 0
-MCU_RX
-Text GLabel 3900 2700 0    50   Input ~ 0
-MCU_TX
-$Comp
-L Device:R R1
-U 1 1 5E4F9816
-P 4050 2700
-F 0 "R1" V 3843 2700 50  0000 C CNN
-F 1 "220" V 3934 2700 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3980 2700 50  0001 C CNN
-F 3 "~" H 4050 2700 50  0001 C CNN
-	1    4050 2700
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5E4FA687
-P 4050 3950
-F 0 "R3" V 3843 3950 50  0000 C CNN
-F 1 "390" V 3934 3950 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3980 3950 50  0001 C CNN
-F 3 "~" H 4050 3950 50  0001 C CNN
-	1    4050 3950
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5E4FB22B
-P 4050 3300
-F 0 "R2" V 3843 3300 50  0000 C CNN
-F 1 "220" V 3934 3300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3980 3300 50  0001 C CNN
-F 3 "~" H 4050 3300 50  0001 C CNN
-	1    4050 3300
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3.3V #PWR0101
-U 1 1 5E4FC0D3
-P 4800 3950
-F 0 "#PWR0101" H 4800 3800 50  0001 C CNN
-F 1 "+3.3V" H 4815 4123 50  0000 C CNN
-F 2 "" H 4800 3950 50  0001 C CNN
-F 3 "" H 4800 3950 50  0001 C CNN
-	1    4800 3950
-	1    0    0    -1  
-$EndComp
-Text GLabel 4800 2900 2    50   Output ~ 0
-TRX_TX
-Text GLabel 4800 3500 2    50   Output ~ 0
-TRX_Signal
-Text GLabel 3900 3950 0    50   Input ~ 0
-TRX_RX
-$Comp
-L power:GNDPWR #PWR0102
-U 1 1 5E4FE23D
-P 4200 4150
-F 0 "#PWR0102" H 4200 3950 50  0001 C CNN
-F 1 "GNDPWR" H 4204 3996 50  0000 C CNN
-F 2 "" H 4200 4100 50  0001 C CNN
-F 3 "" H 4200 4100 50  0001 C CNN
-	1    4200 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0103
-U 1 1 5E4FE5EA
-P 4800 2700
-F 0 "#PWR0103" H 4800 2550 50  0001 C CNN
-F 1 "+5V" H 4815 2873 50  0000 C CNN
-F 2 "" H 4800 2700 50  0001 C CNN
-F 3 "" H 4800 2700 50  0001 C CNN
-	1    4800 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0104
-U 1 1 5E4FE9CD
-P 4800 3300
-F 0 "#PWR0104" H 4800 3150 50  0001 C CNN
-F 1 "+5V" H 4815 3473 50  0000 C CNN
-F 2 "" H 4800 3300 50  0001 C CNN
-F 3 "" H 4800 3300 50  0001 C CNN
-	1    4800 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0107
-U 1 1 5E5020A2
-P 4200 3500
-F 0 "#PWR0107" H 4200 3250 50  0001 C CNN
-F 1 "GND" H 4205 3327 50  0000 C CNN
-F 2 "" H 4200 3500 50  0001 C CNN
-F 3 "" H 4200 3500 50  0001 C CNN
-	1    4200 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0108
-U 1 1 5E5023BD
-P 4200 2900
-F 0 "#PWR0108" H 4200 2650 50  0001 C CNN
-F 1 "GND" H 4205 2727 50  0000 C CNN
-F 2 "" H 4200 2900 50  0001 C CNN
-F 3 "" H 4200 2900 50  0001 C CNN
-	1    4200 2900
-	1    0    0    -1  
-$EndComp
 Text GLabel 2650 3800 2    50   Input ~ 0
 TRX_RX
 Text GLabel 1350 3600 0    50   Input ~ 0
@@ -626,9 +504,9 @@ F 3 "" H 3300 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1350 3700 0    50   Input ~ 0
-MCU_Signal
+MCU_Enable
 Text GLabel 2650 3700 2    50   Output ~ 0
-TRX_Signal
+TRX_Enable
 Text GLabel 2650 3600 2    50   Output ~ 0
 TRX_TX
 $Comp
@@ -643,25 +521,68 @@ F 3 "" H 700 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Isolator:TLP785 U2
-U 1 1 5E4F34D9
-P 4500 2800
-F 0 "U2" H 4500 3125 50  0000 C CNN
-F 1 "TLP785" H 4500 3034 50  0000 C CNN
-F 2 "Package_DIP:DIP-4_W7.62mm" H 4300 2600 50  0001 L CIN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=10569&prodName=TLP785" H 4500 2800 50  0001 L CNN
-	1    4500 2800
+L Mechanical:MountingHole H1
+U 1 1 5E4BF3A2
+P 4100 800
+F 0 "H1" H 4200 846 50  0000 L CNN
+F 1 "MountingHole" H 4200 755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4100 800 50  0001 C CNN
+F 3 "~" H 4100 800 50  0001 C CNN
+	1    4100 800 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Isolator:TLP785 U3
-U 1 1 5E4F8245
-P 4500 3400
-F 0 "U3" H 4500 3725 50  0000 C CNN
-F 1 "TLP785" H 4500 3634 50  0000 C CNN
-F 2 "Package_DIP:DIP-4_W7.62mm" H 4300 3200 50  0001 L CIN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=10569&prodName=TLP785" H 4500 3400 50  0001 L CNN
-	1    4500 3400
+L Mechanical:MountingHole H3
+U 1 1 5E4BFCAE
+P 4100 1150
+F 0 "H3" H 4200 1196 50  0000 L CNN
+F 1 "MountingHole" H 4200 1105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4100 1150 50  0001 C CNN
+F 3 "~" H 4100 1150 50  0001 C CNN
+	1    4100 1150
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5E4C0186
+P 4850 800
+F 0 "H2" H 4950 846 50  0000 L CNN
+F 1 "MountingHole" H 4950 755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4850 800 50  0001 C CNN
+F 3 "~" H 4850 800 50  0001 C CNN
+	1    4850 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5E4C0604
+P 4850 1150
+F 0 "H4" H 4950 1196 50  0000 L CNN
+F 1 "MountingHole" H 4950 1105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4850 1150 50  0001 C CNN
+F 3 "~" H 4850 1150 50  0001 C CNN
+	1    4850 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP1
+U 1 1 5E4D26B7
+P 4400 2750
+F 0 "JP1" H 4400 3014 50  0000 C CNN
+F 1 "Jumper" H 4400 2923 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x01_P2.54mm_Vertical" H 4400 2750 50  0001 C CNN
+F 3 "~" H 4400 2750 50  0001 C CNN
+	1    4400 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 4100 2750 0    50   Input ~ 0
+MCU_TX
+Text GLabel 4850 2750 2    50   Output ~ 0
+D+
+Wire Wire Line
+	4700 2750 4850 2750
+Text Label 4700 2750 0    50   ~ 0
+PWM
+Text Label 5800 1900 0    50   ~ 0
+PWM
 $EndSCHEMATC
