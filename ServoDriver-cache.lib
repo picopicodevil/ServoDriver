@@ -68,6 +68,24 @@ X Pin_5 5 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_Jumper
 #
 DEF Device_Jumper JP 0 30 Y N 1 F N
@@ -148,6 +166,32 @@ X GND 5 1000 -300 200 L 50 50 0 0 W
 X A 6 1000 -200 200 L 50 50 0 0 U
 X B 7 1000 -100 200 L 50 50 0 0 U
 X VCC 8 1000 0 200 L 50 50 0 0 W
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_Si8621AB-B-ISR
+#
+DEF SamacSys_Parts_Si8621AB-B-ISR IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "SamacSys_Parts_Si8621AB-B-ISR" 950 200 50 H V L CNN
+F2 "SOIC127P600X175-8N" 950 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/SI8621AB-B-ISR.pdf" 950 0 50 H I L CNN
+F4 "Digital Isolators 2.5 kV 1 forward & 1 reverse 2-channel isolator" 950 -100 50 H I L CNN "Description"
+F5 "1.75" 950 -200 50 H I L CNN "Height"
+F6 "634-SI8621AB-B-ISR" 950 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=634-SI8621AB-B-ISR" 950 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Silicon Labs" 950 -500 50 H I L CNN "Manufacturer_Name"
+F9 "Si8621AB-B-ISR" 950 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -400 200 -400 200 100 N
+X VDD1 1 0 0 200 R 50 50 0 0 W
+X A1 2 0 -100 200 R 50 50 0 0 I
+X A2 3 0 -200 200 R 50 50 0 0 w
+X GND1 4 0 -300 200 R 50 50 0 0 W
+X GND2 5 1100 -300 200 L 50 50 0 0 W
+X B2 6 1100 -200 200 L 50 50 0 0 I
+X B1 7 1100 -100 200 L 50 50 0 0 O
+X VDD2 8 1100 0 200 L 50 50 0 0 W
 ENDDRAW
 ENDDEF
 #
