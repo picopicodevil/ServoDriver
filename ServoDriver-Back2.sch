@@ -182,54 +182,54 @@ Wire Wire Line
 $Comp
 L SamacSys_Parts:LTC485CN8#PBF IC1
 U 1 1 5E4BBCB0
-P 4150 3550
-F 0 "IC1" H 4650 3815 50  0000 C CNN
-F 1 "LTC485" H 4650 3724 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 5000 3650 50  0001 L CNN
-F 3 "http://docs-emea.rs-online.com/webdocs/1385/0900766b81385290.pdf" H 5000 3550 50  0001 L CNN
-F 4 "LTC485CN8#PBF, Line Transceiver, RS-485 Differential, 5 V, 8-Pin PDIP" H 5000 3450 50  0001 L CNN "Description"
-F 5 "3.935" H 5000 3350 50  0001 L CNN "Height"
-F 6 "Linear Technology" H 5000 3250 50  0001 L CNN "Manufacturer_Name"
-F 7 "LTC485CN8#PBF" H 5000 3150 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "584-LTC485CN8#PBF" H 5000 3050 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=584-LTC485CN8%23PBF" H 5000 2950 50  0001 L CNN "Mouser Price/Stock"
-F 10 "5455786P" H 5000 2850 50  0001 L CNN "RS Part Number"
-F 11 "http://uk.rs-online.com/web/p/products/5455786P" H 5000 2750 50  0001 L CNN "RS Price/Stock"
-	1    4150 3550
+P 2250 2600
+F 0 "IC1" H 2750 2865 50  0000 C CNN
+F 1 "LTC485" H 2750 2774 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 3100 2700 50  0001 L CNN
+F 3 "http://docs-emea.rs-online.com/webdocs/1385/0900766b81385290.pdf" H 3100 2600 50  0001 L CNN
+F 4 "LTC485CN8#PBF, Line Transceiver, RS-485 Differential, 5 V, 8-Pin PDIP" H 3100 2500 50  0001 L CNN "Description"
+F 5 "3.935" H 3100 2400 50  0001 L CNN "Height"
+F 6 "Linear Technology" H 3100 2300 50  0001 L CNN "Manufacturer_Name"
+F 7 "LTC485CN8#PBF" H 3100 2200 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "584-LTC485CN8#PBF" H 3100 2100 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=584-LTC485CN8%23PBF" H 3100 2000 50  0001 L CNN "Mouser Price/Stock"
+F 10 "5455786P" H 3100 1900 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/5455786P" H 3100 1800 50  0001 L CNN "RS Price/Stock"
+	1    2250 2600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR012
 U 1 1 5E4BE24A
-P 5150 3550
-F 0 "#PWR012" H 5150 3400 50  0001 C CNN
-F 1 "+5V" H 5165 3723 50  0000 C CNN
-F 2 "" H 5150 3550 50  0001 C CNN
-F 3 "" H 5150 3550 50  0001 C CNN
-	1    5150 3550
+P 3250 2600
+F 0 "#PWR012" H 3250 2450 50  0001 C CNN
+F 1 "+5V" H 3265 2773 50  0000 C CNN
+F 2 "" H 3250 2600 50  0001 C CNN
+F 3 "" H 3250 2600 50  0001 C CNN
+	1    3250 2600
 	1    0    0    -1  
 $EndComp
-Text GLabel 5150 3650 2    50   BiDi ~ 0
+Text GLabel 3250 2700 2    50   BiDi ~ 0
 D-
-Text GLabel 5150 3750 2    50   BiDi ~ 0
+Text GLabel 3250 2800 2    50   BiDi ~ 0
 D+
 Wire Wire Line
-	4150 3650 4150 3750
-Text GLabel 4150 3850 0    50   Input ~ 0
+	2250 2700 2250 2800
+Text GLabel 2250 2900 0    50   Input ~ 0
 TRX_TX
-Text GLabel 4150 3550 0    50   Output ~ 0
+Text GLabel 2250 2600 0    50   Output ~ 0
 TRX_RX
-Text GLabel 4150 3700 0    50   Input ~ 0
-TRX_Enable
+Text GLabel 2250 2750 0    50   Input ~ 0
+TRX_Signal
 $Comp
 L power:GNDPWR #PWR013
 U 1 1 5E4CC7A1
-P 5150 3850
-F 0 "#PWR013" H 5150 3650 50  0001 C CNN
-F 1 "GNDPWR" H 5154 3696 50  0000 C CNN
-F 2 "" H 5150 3800 50  0001 C CNN
-F 3 "" H 5150 3800 50  0001 C CNN
-	1    5150 3850
+P 3250 2900
+F 0 "#PWR013" H 3250 2700 50  0001 C CNN
+F 1 "GNDPWR" H 3254 2746 50  0000 C CNN
+F 2 "" H 3250 2850 50  0001 C CNN
+F 3 "" H 3250 2850 50  0001 C CNN
+	1    3250 2900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -244,7 +244,7 @@ F 3 "~" H 4500 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4300 2100 0    50   Output ~ 0
-MCU_Enable
+MCU_Signal
 $Comp
 L power:+3.3V #PWR08
 U 1 1 5E4CD9A4
@@ -276,12 +276,12 @@ Wire Wire Line
 $Comp
 L Regulator_Linear:L7805 U1
 U 1 1 5E4CF473
-P 6100 2900
-F 0 "U1" H 6100 3142 50  0000 C CNN
-F 1 "L7805" H 6100 3051 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6125 2750 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 6100 2850 50  0001 C CNN
-	1    6100 2900
+P 5850 2900
+F 0 "U1" H 5850 3142 50  0000 C CNN
+F 1 "L7805" H 5850 3051 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5875 2750 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 5850 2850 50  0001 C CNN
+	1    5850 2900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -296,25 +296,47 @@ F 3 "" H 5550 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L power:PWR_FLAG #FLG05
+U 1 1 5E4BDA39
+P 3350 1300
+F 0 "#FLG05" H 3350 1375 50  0001 C CNN
+F 1 "PWR_FLAG" H 3350 1473 50  0000 C CNN
+F 2 "" H 3350 1300 50  0001 C CNN
+F 3 "~" H 3350 1300 50  0001 C CNN
+	1    3350 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR05
+U 1 1 5E4BD4F9
+P 3350 1300
+F 0 "#PWR05" H 3350 1150 50  0001 C CNN
+F 1 "+5V" H 3365 1473 50  0000 C CNN
+F 2 "" H 3350 1300 50  0001 C CNN
+F 3 "" H 3350 1300 50  0001 C CNN
+	1    3350 1300
+	-1   0    0    1   
+$EndComp
+$Comp
 L power:+5V #PWR015
 U 1 1 5E4D01CB
-P 6650 2900
-F 0 "#PWR015" H 6650 2750 50  0001 C CNN
-F 1 "+5V" H 6665 3073 50  0000 C CNN
-F 2 "" H 6650 2900 50  0001 C CNN
-F 3 "" H 6650 2900 50  0001 C CNN
-	1    6650 2900
+P 6150 2900
+F 0 "#PWR015" H 6150 2750 50  0001 C CNN
+F 1 "+5V" H 6165 3073 50  0000 C CNN
+F 2 "" H 6150 2900 50  0001 C CNN
+F 3 "" H 6150 2900 50  0001 C CNN
+	1    6150 2900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDPWR #PWR016
 U 1 1 5E4D0886
-P 6100 3200
-F 0 "#PWR016" H 6100 3000 50  0001 C CNN
-F 1 "GNDPWR" H 6104 3046 50  0000 C CNN
-F 2 "" H 6100 3150 50  0001 C CNN
-F 3 "" H 6100 3150 50  0001 C CNN
-	1    6100 3200
+P 5850 3200
+F 0 "#PWR016" H 5850 3000 50  0001 C CNN
+F 1 "GNDPWR" H 5854 3046 50  0000 C CNN
+F 2 "" H 5850 3150 50  0001 C CNN
+F 3 "" H 5850 3150 50  0001 C CNN
+	1    5850 3200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -397,6 +419,128 @@ F 3 "~" H 1800 2000 50  0001 C CNN
 	1    1800 2000
 	-1   0    0    1   
 $EndComp
+$Comp
+L Isolator:TLP785 U4
+U 1 1 5E4F8EEB
+P 4500 4050
+F 0 "U4" H 4500 4375 50  0000 C CNN
+F 1 "TLP785" H 4500 4284 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 4300 3850 50  0001 L CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=10569&prodName=TLP785" H 4500 4050 50  0001 L CNN
+	1    4500 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 3900 3300 0    50   Input ~ 0
+MCU_Signal
+Text GLabel 4800 4150 2    50   Output ~ 0
+MCU_RX
+Text GLabel 3900 2700 0    50   Input ~ 0
+MCU_TX
+$Comp
+L Device:R R1
+U 1 1 5E4F9816
+P 4050 2700
+F 0 "R1" V 3843 2700 50  0000 C CNN
+F 1 "220" V 3934 2700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3980 2700 50  0001 C CNN
+F 3 "~" H 4050 2700 50  0001 C CNN
+	1    4050 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E4FA687
+P 4050 3950
+F 0 "R3" V 3843 3950 50  0000 C CNN
+F 1 "390" V 3934 3950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3980 3950 50  0001 C CNN
+F 3 "~" H 4050 3950 50  0001 C CNN
+	1    4050 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E4FB22B
+P 4050 3300
+F 0 "R2" V 3843 3300 50  0000 C CNN
+F 1 "220" V 3934 3300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3980 3300 50  0001 C CNN
+F 3 "~" H 4050 3300 50  0001 C CNN
+	1    4050 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5E4FC0D3
+P 4800 3950
+F 0 "#PWR0101" H 4800 3800 50  0001 C CNN
+F 1 "+3.3V" H 4815 4123 50  0000 C CNN
+F 2 "" H 4800 3950 50  0001 C CNN
+F 3 "" H 4800 3950 50  0001 C CNN
+	1    4800 3950
+	1    0    0    -1  
+$EndComp
+Text GLabel 4800 2900 2    50   Output ~ 0
+TRX_TX
+Text GLabel 4800 3500 2    50   Output ~ 0
+TRX_Signal
+Text GLabel 3900 3950 0    50   Input ~ 0
+TRX_RX
+$Comp
+L power:GNDPWR #PWR0102
+U 1 1 5E4FE23D
+P 4200 4150
+F 0 "#PWR0102" H 4200 3950 50  0001 C CNN
+F 1 "GNDPWR" H 4204 3996 50  0000 C CNN
+F 2 "" H 4200 4100 50  0001 C CNN
+F 3 "" H 4200 4100 50  0001 C CNN
+	1    4200 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5E4FE5EA
+P 4800 2700
+F 0 "#PWR0103" H 4800 2550 50  0001 C CNN
+F 1 "+5V" H 4815 2873 50  0000 C CNN
+F 2 "" H 4800 2700 50  0001 C CNN
+F 3 "" H 4800 2700 50  0001 C CNN
+	1    4800 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5E4FE9CD
+P 4800 3300
+F 0 "#PWR0104" H 4800 3150 50  0001 C CNN
+F 1 "+5V" H 4815 3473 50  0000 C CNN
+F 2 "" H 4800 3300 50  0001 C CNN
+F 3 "" H 4800 3300 50  0001 C CNN
+	1    4800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5E5020A2
+P 4200 3500
+F 0 "#PWR0107" H 4200 3250 50  0001 C CNN
+F 1 "GND" H 4205 3327 50  0000 C CNN
+F 2 "" H 4200 3500 50  0001 C CNN
+F 3 "" H 4200 3500 50  0001 C CNN
+	1    4200 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5E5023BD
+P 4200 2900
+F 0 "#PWR0108" H 4200 2650 50  0001 C CNN
+F 1 "GND" H 4205 2727 50  0000 C CNN
+F 2 "" H 4200 2900 50  0001 C CNN
+F 3 "" H 4200 2900 50  0001 C CNN
+	1    4200 2900
+	1    0    0    -1  
+$EndComp
 Text GLabel 2650 3800 2    50   Input ~ 0
 TRX_RX
 Text GLabel 1350 3600 0    50   Input ~ 0
@@ -429,7 +573,7 @@ L SamacSys_Parts:Si8631AB-B-IS IC2
 U 1 1 5E4BF0F1
 P 1350 3400
 F 0 "IC2" H 2000 3665 50  0000 C CNN
-F 1 "Si8631" H 2000 3574 50  0000 C CNN
+F 1 "Si8631AB-B-IS" H 2000 3574 50  0000 C CNN
 F 2 "SamacSys_Parts:SOIC127P1030X265-16N" H 2500 3500 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/SI8631AB-B-IS.pdf" H 2500 3400 50  0001 L CNN
 F 4 "Silicon Labs Si8631AB-B-IS PCB SMT, 3-channel Digital Isolator 1MBps, 2.5 kVrms, 16-Pin SOIC" H 2500 3300 50  0001 L CNN "Description"
@@ -482,9 +626,9 @@ F 3 "" H 3300 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1350 3700 0    50   Input ~ 0
-MCU_Enable
+MCU_Signal
 Text GLabel 2650 3700 2    50   Output ~ 0
-TRX_Enable
+TRX_Signal
 Text GLabel 2650 3600 2    50   Output ~ 0
 TRX_TX
 $Comp
@@ -499,258 +643,25 @@ F 3 "" H 700 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H1
-U 1 1 5E4BF3A2
-P 4100 800
-F 0 "H1" H 4200 846 50  0000 L CNN
-F 1 "MountingHole" H 4200 755 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 4100 800 50  0001 C CNN
-F 3 "~" H 4100 800 50  0001 C CNN
-	1    4100 800 
+L Isolator:TLP785 U2
+U 1 1 5E4F34D9
+P 4500 2800
+F 0 "U2" H 4500 3125 50  0000 C CNN
+F 1 "TLP785" H 4500 3034 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 4300 2600 50  0001 L CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=10569&prodName=TLP785" H 4500 2800 50  0001 L CNN
+	1    4500 2800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
-U 1 1 5E4BFCAE
-P 4100 1150
-F 0 "H3" H 4200 1196 50  0000 L CNN
-F 1 "MountingHole" H 4200 1105 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 4100 1150 50  0001 C CNN
-F 3 "~" H 4100 1150 50  0001 C CNN
-	1    4100 1150
+L Isolator:TLP785 U3
+U 1 1 5E4F8245
+P 4500 3400
+F 0 "U3" H 4500 3725 50  0000 C CNN
+F 1 "TLP785" H 4500 3634 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 4300 3200 50  0001 L CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=10569&prodName=TLP785" H 4500 3400 50  0001 L CNN
+	1    4500 3400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 5E4C0186
-P 4850 800
-F 0 "H2" H 4950 846 50  0000 L CNN
-F 1 "MountingHole" H 4950 755 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 4850 800 50  0001 C CNN
-F 3 "~" H 4850 800 50  0001 C CNN
-	1    4850 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 5E4C0604
-P 4850 1150
-F 0 "H4" H 4950 1196 50  0000 L CNN
-F 1 "MountingHole" H 4950 1105 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 4850 1150 50  0001 C CNN
-F 3 "~" H 4850 1150 50  0001 C CNN
-	1    4850 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP1
-U 1 1 5E4D26B7
-P 4400 2750
-F 0 "JP1" H 4400 3014 50  0000 C CNN
-F 1 "Jumper" H 4400 2923 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x01_P2.54mm_Vertical" H 4400 2750 50  0001 C CNN
-F 3 "~" H 4400 2750 50  0001 C CNN
-	1    4400 2750
-	1    0    0    -1  
-$EndComp
-Text GLabel 4850 2750 2    50   Output ~ 0
-D+
-Wire Wire Line
-	4700 2750 4850 2750
-Text Label 4700 2750 0    50   ~ 0
-PWM
-Text Label 5800 1900 0    50   ~ 0
-PWM
-$Comp
-L power:+3.3V #PWR0101
-U 1 1 5E4C31B9
-P 950 4700
-F 0 "#PWR0101" H 950 4550 50  0001 C CNN
-F 1 "+3.3V" H 965 4873 50  0000 C CNN
-F 2 "" H 950 4700 50  0001 C CNN
-F 3 "" H 950 4700 50  0001 C CNN
-	1    950  4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 5E4C36AF
-P 1100 5800
-F 0 "#PWR0102" H 1100 5550 50  0001 C CNN
-F 1 "GND" H 1105 5627 50  0000 C CNN
-F 2 "" H 1100 5800 50  0001 C CNN
-F 3 "" H 1100 5800 50  0001 C CNN
-	1    1100 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDPWR #PWR0103
-U 1 1 5E4C3BC5
-P 2950 5800
-F 0 "#PWR0103" H 2950 5600 50  0001 C CNN
-F 1 "GNDPWR" H 2954 5646 50  0000 C CNN
-F 2 "" H 2950 5750 50  0001 C CNN
-F 3 "" H 2950 5750 50  0001 C CNN
-	1    2950 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0104
-U 1 1 5E4C4651
-P 3050 4700
-F 0 "#PWR0104" H 3050 4550 50  0001 C CNN
-F 1 "+5V" H 3065 4873 50  0000 C CNN
-F 2 "" H 3050 4700 50  0001 C CNN
-F 3 "" H 3050 4700 50  0001 C CNN
-	1    3050 4700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	950  4700 1500 4700
-Wire Wire Line
-	950  4700 950  5500
-Wire Wire Line
-	950  5500 1500 5500
-Connection ~ 950  4700
-Wire Wire Line
-	2600 4700 3050 4700
-Wire Wire Line
-	3050 4700 3050 5500
-Wire Wire Line
-	3050 5500 2600 5500
-Connection ~ 3050 4700
-Wire Wire Line
-	2600 5000 2950 5000
-Wire Wire Line
-	2950 5000 2950 5800
-Wire Wire Line
-	1500 5800 1100 5800
-Connection ~ 2950 5800
-Wire Wire Line
-	2600 5800 2950 5800
-Wire Wire Line
-	1500 5000 1100 5000
-Wire Wire Line
-	1100 5000 1100 5800
-Connection ~ 1100 5800
-NoConn ~ 2600 4900
-NoConn ~ 1500 4900
-Text GLabel 1500 5600 0    50   Input ~ 0
-MCU_Enable
-$Comp
-L SamacSys_Parts:Si8621AB-B-ISR IC3
-U 1 1 5E4C0D5A
-P 1500 4700
-F 0 "IC3" H 2050 4965 50  0000 C CNN
-F 1 "Si8621AB-B-ISR" H 2050 4874 50  0000 C CNN
-F 2 "SamacSys_Parts:SOIC127P600X175-8N" H 2450 4800 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/SI8621AB-B-ISR.pdf" H 2450 4700 50  0001 L CNN
-F 4 "Digital Isolators 2.5 kV 1 forward & 1 reverse 2-channel isolator" H 2450 4600 50  0001 L CNN "Description"
-F 5 "1.75" H 2450 4500 50  0001 L CNN "Height"
-F 6 "634-SI8621AB-B-ISR" H 2450 4400 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=634-SI8621AB-B-ISR" H 2450 4300 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Silicon Labs" H 2450 4200 50  0001 L CNN "Manufacturer_Name"
-F 9 "Si8621AB-B-ISR" H 2450 4100 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1500 4700
-	1    0    0    -1  
-$EndComp
-Text GLabel 1500 4800 0    50   Input ~ 0
-MCU_TX
-Text GLabel 2600 5700 2    50   Input ~ 0
-TRX_RX
-Text GLabel 2600 5600 2    50   Output ~ 0
-TRX_Enable
-Text GLabel 2600 4800 2    50   Output ~ 0
-TRX_TX
-Text GLabel 1500 5700 0    50   Output ~ 0
-MCU_RX
-$Comp
-L SamacSys_Parts:Si8621AB-B-ISR IC4
-U 1 1 5E4C234D
-P 1500 5500
-F 0 "IC4" H 2050 5765 50  0000 C CNN
-F 1 "Si8621AB-B-ISR" H 2050 5674 50  0000 C CNN
-F 2 "SamacSys_Parts:SOIC127P600X175-8N" H 2450 5600 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/SI8621AB-B-ISR.pdf" H 2450 5500 50  0001 L CNN
-F 4 "Digital Isolators 2.5 kV 1 forward & 1 reverse 2-channel isolator" H 2450 5400 50  0001 L CNN "Description"
-F 5 "1.75" H 2450 5300 50  0001 L CNN "Height"
-F 6 "634-SI8621AB-B-ISR" H 2450 5200 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=634-SI8621AB-B-ISR" H 2450 5100 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Silicon Labs" H 2450 5000 50  0001 L CNN "Manufacturer_Name"
-F 9 "Si8621AB-B-ISR" H 2450 4900 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1500 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C1
-U 1 1 5E4EA6D7
-P 2900 2000
-F 0 "C1" H 3015 2046 50  0000 L CNN
-F 1 "0.1u" H 3015 1955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2938 1850 50  0001 C CNN
-F 3 "~" H 2900 2000 50  0001 C CNN
-	1    2900 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C3
-U 1 1 5E4EB29D
-P 6500 3050
-F 0 "C3" H 6615 3096 50  0000 L CNN
-F 1 "0.1u" H 6615 3005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6538 2900 50  0001 C CNN
-F 3 "~" H 6500 3050 50  0001 C CNN
-	1    6500 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 5E4EB9D5
-P 5700 3050
-F 0 "C2" H 5815 3096 50  0000 L CNN
-F 1 "0.33u" H 5815 3005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5738 2900 50  0001 C CNN
-F 3 "~" H 5700 3050 50  0001 C CNN
-	1    5700 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR025
-U 1 1 5E4EE0A8
-P 2900 1850
-F 0 "#PWR025" H 2900 1700 50  0001 C CNN
-F 1 "+3.3V" H 2915 2023 50  0000 C CNN
-F 2 "" H 2900 1850 50  0001 C CNN
-F 3 "" H 2900 1850 50  0001 C CNN
-	1    2900 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR026
-U 1 1 5E4EE985
-P 2900 2150
-F 0 "#PWR026" H 2900 1900 50  0001 C CNN
-F 1 "GND" H 2905 1977 50  0000 C CNN
-F 2 "" H 2900 2150 50  0001 C CNN
-F 3 "" H 2900 2150 50  0001 C CNN
-	1    2900 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6500 3200 6100 3200
-Connection ~ 6100 3200
-Wire Wire Line
-	6100 3200 5700 3200
-Wire Wire Line
-	5550 2900 5700 2900
-Connection ~ 5700 2900
-Wire Wire Line
-	5700 2900 5800 2900
-Wire Wire Line
-	6400 2900 6500 2900
-Connection ~ 6500 2900
-Wire Wire Line
-	6500 2900 6650 2900
-Text GLabel 4100 2750 0    50   Input ~ 0
-TRX_TX
 $EndSCHEMATC
