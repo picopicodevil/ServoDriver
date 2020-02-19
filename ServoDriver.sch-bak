@@ -296,28 +296,6 @@ F 3 "" H 5550 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG05
-U 1 1 5E4BDA39
-P 3350 1300
-F 0 "#FLG05" H 3350 1375 50  0001 C CNN
-F 1 "PWR_FLAG" H 3350 1473 50  0000 C CNN
-F 2 "" H 3350 1300 50  0001 C CNN
-F 3 "~" H 3350 1300 50  0001 C CNN
-	1    3350 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR05
-U 1 1 5E4BD4F9
-P 3350 1300
-F 0 "#PWR05" H 3350 1150 50  0001 C CNN
-F 1 "+5V" H 3365 1473 50  0000 C CNN
-F 2 "" H 3350 1300 50  0001 C CNN
-F 3 "" H 3350 1300 50  0001 C CNN
-	1    3350 1300
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+5V #PWR015
 U 1 1 5E4D01CB
 P 6650 2900
@@ -575,8 +553,6 @@ F 3 "~" H 4400 2750 50  0001 C CNN
 	1    4400 2750
 	1    0    0    -1  
 $EndComp
-Text GLabel 4100 2750 0    50   Input ~ 0
-MCU_TX
 Text GLabel 4850 2750 2    50   Output ~ 0
 D+
 Wire Wire Line
@@ -775,4 +751,6 @@ Wire Wire Line
 Connection ~ 6500 2900
 Wire Wire Line
 	6500 2900 6650 2900
+Text GLabel 4100 2750 0    50   Input ~ 0
+TRX_TX
 $EndSCHEMATC
