@@ -575,8 +575,6 @@ F 3 "~" H 4400 2750 50  0001 C CNN
 	1    4400 2750
 	1    0    0    -1  
 $EndComp
-Text GLabel 4100 2750 0    50   Input ~ 0
-MCU_TX
 Text GLabel 4850 2750 2    50   Output ~ 0
 D+
 Wire Wire Line
@@ -775,4 +773,6 @@ Wire Wire Line
 Connection ~ 6500 2900
 Wire Wire Line
 	6500 2900 6650 2900
+Text GLabel 4100 2750 0    50   Input ~ 0
+TRX_TX
 $EndSCHEMATC
